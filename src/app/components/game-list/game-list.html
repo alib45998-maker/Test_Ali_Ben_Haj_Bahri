@@ -1,0 +1,11 @@
+<h1>
+    Jouets à vendre
+</h1> <br>
+<div class="badge text-bg-primary"> Nombre de jeux en promotion :  </div> <br>
+<ul>
+@for(game of games();track $index){
+    
+    <li> <ali-game-item [jeu] = "game"></ali-game-item> </li>
+}
+</ul>
+
